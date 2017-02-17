@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'REMEDIES.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="!selectedRemedy">
+    <button ion-item *ngFor="let remedy of remedies" (click)="itemTapped($event, remedy)">
+      {{remedy.name}}
+    </button>
+  </ion-list>
+  <div *ngIf="selectedRemedy" padding>
+    <h2>{{selectedRemedy.name}}</h2>
+    <i>{{selectedRemedy.altName}}</i>
+    <p>
+      <b>{{ 'REMEDY.DOSAGEBABY' | translate }}:</b><br/>
+      {{selectedRemedy.dosageBaby}}
+    </p>
+    <p>
+      <b>{{ 'REMEDY.DOSAGECHILD' | translate }}:</b><br/>
+      {{selectedRemedy.dosageChild}}
+    </p>
+    <p>
+      <b>{{ 'REMEDY.DOSAGEADULT' | translate }}:</b><br/>
+      {{selectedRemedy.dosageAdult}}
+    </p>
+    <p>
+      <b>{{ 'REMEDY.DOSAGEMULTI' | translate }}:</b><br/>
+      {{selectedRemedy.dosageMulti}}
+    </p>
+  </div>
+</ion-content>

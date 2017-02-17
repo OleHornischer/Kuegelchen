@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{ 'IDEA.TITLE' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <span>
+      <h3>{{ 'IDEA.TITLE' | translate }}</h3>
+      <div [innerHTML]="'IDEA.CONTENT' | translate"></div>
+  </span>
+
+</ion-content>

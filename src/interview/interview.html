@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+
+        <ion-buttons start>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+
+            <button ion-button icon-only (click)="previousTapped($event)">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-title>{{ 'INTERVIEW.TITLE' | translate }}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only (click)="nextTapped($event)">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <span *ngIf="questions">
+        <h2>{{'INTERVIEW.QUESTION' | translate}} {{getCurrentIndex() + 1}}/{{questions.length}}</h2>
+        <ion-item-divider></ion-item-divider>
+        <span *ngIf="currentQuestion">
+            <h3>{{currentQuestion.text}}</h3>
+            <ion-item *ngFor="let answer of currentQuestion.answers">
+                <ion-label>{{answer.text}}</ion-label>
+                <ion-checkbox checked="false" [(ngModel)]="answer.selected"></ion-checkbox>
+            </ion-item>
+        </span>
+
+
+    </span>
+    <span *ngIf="!questions">
+        Loading ...
+    </span>
+</ion-content>

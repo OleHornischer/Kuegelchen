@@ -1,0 +1,24 @@
+{
+  "MENU": {
+    "INTERVIEW": "Interview",
+    "HISTORY": "History",
+    "INSTRUCTIONS": "Instructions",
+    "REMEDIES": "The remedies",
+    "IDEA": "The idea"
+  },
+  "INSTRUCTIONS": {
+    "TITLE": "Instructions",
+    "CONTENT": "<b>This app does not replace a visit to the doctor and no professional diagnosis.</b> <p>Mit dem Tippen auf <b>Interview</b> geht es los.</p> <p>Beantworte die einzelnen Fragen und tippe auf den <b>Pfeil</b> zum Fortfahren. Es ist durch tippen auf das <b>Haus</b> jederzeit möglich das Interview zu beenden und zurück zum Hauptmenü zu gelangen. Durch Pfeil <b>Zurück</b> kann zurückgesprungen werden, ohne den Fortschritt zu verlieren.</p> <p>Manche Antworten bewirken das <b>Hinzufügen zusätzlicher Fragen</b>, sodass der Verlauf des Interviews unterschiedlich sein kann. Diese Antworten sind durch ein kleines Zeichen hervorgehoben.</p> <p>Der <b>Balkenverlauf</b> oben rechts, zeigt an, wie weit das Interview fortgeschritten ist. Dabei bitte beachten, dass durch die Folgefragen der Verlauf eines Interview fast immer unterschiedlich ist.</p> <p>Nach Beantwortung der letzten Frage zeigt dir die <b>Empfehlung</b> die drei am Besten passenden Mittel aus dem \"Kügelchen\"-Set. Das Mittel mit der höchsten Wertung wird empfohlen.</p> <p>Haben zwei oder gar drei Mittel die gleiche Wertung wird empfohlen diese zusammen zu nehmen.</p> <p><b>Verabreichungstips</b> können pro Mittel direkt eingeblendet werden.</p> <p><b>Wie lange soll ein Kügelchen genommen werden?</b><br/> Beobachte weiterhin die Symptome, wenn sich etwas stark ändert, überprüfe mit der App, ob ein anderes Mittel jetzt passender ist. Wenn die Beschwerden nachlassen nimm das/die Mittel noch 2 Tage weiter.</p> <p><b>Gute Gesundheit und viel Lebensfreude!</b></p>"
+  },
+  "IDEA": {
+    "TITLE": "The idea",
+    "CONTENT": "There are thousands of homeopathic substances in uncounted potencies, jedoch sind viele dieser Mittel oder Potenzen sehr speziell und werden in nur sehr seltenen Fällen benötigt.<p>Daher schlagen wir 22 Mitteln in jeweils einer Potenz als \"homöopathische Hausapotheke\" vor, mit der der Körper bei vielen der häufigsten Problemen unterstützt werden kann.</p><p>Diese Hausapotheke, zusammen mit der App Kügelchen ermöglicht die Nutzung homöopathischer Mittel im Alltag, ohne große Mengen an Büchern oder Röhrchen mitnehmen zu müssen.</p><p>Die im Bereich \"Die Mittel\" gelisteten homöopathischen Mittel in den jeweiligen Potenzen sind die einzigen Mittel, die im Rahmen dieser App genutzt werden. Am Ende jedes \"Interviews\" werden drei Mittel aus diesem Fundus vorgeschlagen und direkt angeboten, wie diese zu verabreichen sind. Wir empfehlen diese Mittel zum Einstieg als Grundstock zu besorgen, damit sie zur Verfügung stehen, sobald sie gebraucht werden.</p><p>Natürlich ersetzt diese App keinen Arztbesuch und keine fachkundige Diagnose, aber die Kügelchen können eine Heilungsanregung geben damit die Erkrankung sich vielleicht nicht so stark entwickelt oder schon im Anfang ausgeheilt wird. Um sehr spezielle Störungen homöopathisch zu behandeln, sollte unbedingt ein Homöopath aufgesucht werden, der mit seiner Fachkompetenz aus den tausenden Mitteln das passende heraus sucht.</p>"
+  },
+  "REMEDIES": {
+    "TITLE": "The remedies"
+  },
+  "INTERVIEW": {
+    "TITLE": "Interview",
+    "QUESTION": "Question"
+  }
+}
