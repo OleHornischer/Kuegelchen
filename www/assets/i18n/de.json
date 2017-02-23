@@ -19,6 +19,11 @@
   },
   "INTERVIEW": {
     "TITLE": "Interview",
-    "QUESTION": "Frage"
+    "QUESTION": "Frage",
+    "TOASTNOANSWER": "Es muss mindestens eine Antwort ausgewäḧlt werden.",
+    "RESETCONFIRM": "Interview wirklich zurücksetzen und alle Antworten verwerfen?"
+  },
+  "GENERAL": {
+    "WARNING": "Warnung!"
   }
 }

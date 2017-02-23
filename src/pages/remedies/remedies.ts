@@ -13,13 +13,10 @@ export class Remedies implements OnInit {
   remedies: Remedy[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private resourceService: ResourceService) {
-    // If we navigated to this page, we will have an item available as a nav param
     this.selectedRemedy = navParams.get('remedy');
-
   }
 
   itemTapped(event, remedy) {
-    // That's right, we're pushing to ourselves!
     this.navCtrl.push(Remedies, {
       remedy: remedy
     });

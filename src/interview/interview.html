@@ -5,19 +5,10 @@
             <button ion-button menuToggle>
                 <ion-icon name="menu"></ion-icon>
             </button>
-
-            <button ion-button icon-only (click)="previousTapped($event)">
-                <ion-icon name="arrow-back"></ion-icon>
-            </button>
         </ion-buttons>
 
         <ion-title>{{ 'INTERVIEW.TITLE' | translate }}</ion-title>
 
-        <ion-buttons end>
-            <button ion-button icon-only (click)="nextTapped($event)">
-                <ion-icon name="arrow-forward"></ion-icon>
-            </button>
-        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
@@ -30,10 +21,21 @@
             <h3>{{currentQuestion.text}}</h3>
             <ion-item *ngFor="let answer of currentQuestion.answers">
                 <ion-label>{{answer.text}}</ion-label>
-                <ion-checkbox checked="false" [(ngModel)]="answer.selected"></ion-checkbox>
+                <ion-checkbox checked="false" [(ngModel)]="answer.selected" (ionChange)="onAnswerSelect(answer, $event)"></ion-checkbox>
             </ion-item>
         </span>
 
+         <button ion-button icon-only (click)="previousTapped($event)">
+            <ion-icon name="arrow-back"></ion-icon>
+         </button>
+
+         <button ion-button icon-only (click)="refreshTapped($event)">
+            <ion-icon name="refresh"></ion-icon>
+         </button>
+
+          <button ion-button icon-only (click)="nextTapped($event)">
+             <ion-icon name="arrow-forward"></ion-icon>
+          </button>
 
     </span>
     <span *ngIf="!questions">

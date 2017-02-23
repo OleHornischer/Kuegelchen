@@ -1,20 +1,30 @@
 import {Component, OnInit} from '@angular/core';
 
 import {NavController, NavParams, Platform} from 'ionic-angular';
-import {Question} from "./question";
+import {Question} from "../entities/question";
 import {ResourceService} from "../services/resource.service";
 
-declare var window: any;
+import {Dialogs, Toast} from 'ionic-native';
+import {TranslateService} from "ng2-translate";
+import {Answer} from "../entities/answer";
+import {QuestionService} from "../services/question.service";
+import {AnswerService} from "../services/answer.service";
 
 @Component({
     selector: 'page-interview',
-    templateUrl: 'interview.html'
+    templateUrl: 'interview.html',
+    providers: [QuestionService],
 })
 export class Interview implements OnInit {
     currentQuestion: Question;
     questions: Question[];
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private resourceService: ResourceService, private platform: Platform) {
+    constructor(public navCtrl: NavController,
+                public navParams: NavParams,
+                private resourceService: ResourceService,
+                private platform: Platform,
+                private translate: TranslateService,
+                private questionService: QuestionService) {
         // If we navigated to this page, we will have an item available as a nav param
         this.currentQuestion = navParams.get('question');
 
@@ -23,12 +33,33 @@ export class Interview implements OnInit {
     nextTapped(event) {
         let currentIndex = this.getCurrentIndex();
         if (currentIndex < this.questions.length - 1) {
-            if (this.currentQuestion.hasSelectedAnswer()) {
+            if (this.questionService.hasSelectedAnswer(this.currentQuestion)) {
                 this.currentQuestion = this.questions[currentIndex + 1];
             } else {
-                this.showToast('GIVE ME AN ANSWER!!!', 'bottom');
+                this.showToast(this.translate.instant('INTERVIEW.TOASTNOANSWER'), 'bottom');
             }
+        } else {
+            //calculate result
         }
+    }
+
+    refreshTapped(event) {
+        this.platform.ready().then(() => {
+                try {
+                    let choice = Dialogs.confirm(this.translate.instant('INTERVIEW.RESETCONFIRM'), this.translate.instant('GENERAL.WARNING'));
+                    choice.then(c => {
+                        if (c && c == 1) this.ngOnInit();
+                    });
+                } catch (e: string) {
+                    if (e && e === 'cordova_not_available') {
+                        if (confirm(this.translate.instant('INTERVIEW.RESETCONFIRM'))) {
+                            this.ngOnInit();
+                        }
+                    }
+                }
+            }
+        );
+        this.ngOnInit();
     }
 
     previousTapped(event) {
@@ -38,7 +69,24 @@ export class Interview implements OnInit {
         }
     }
 
-    getCurrentIndex() {
+    onAnswerSelect(answer: Answer, event) {
+        if (answer.selected) {
+            this.toggleCheckedStatusConsideringNoneOption(answer);
+            this.addPossibleFollowups(answer);
+        } else {
+            this.removePossibleFollowups(answer);
+        }
+    }
+
+
+    ngOnInit(): void {
+        this.questionService.getInterview()
+            .then(result => this.questions = result as Question[])
+            .then(() => this.currentQuestion = this.questions[0]);
+
+    }
+
+    private getCurrentIndex() {
         if (this.questions && this.currentQuestion) {
             return this.questions.indexOf(this.currentQuestion);
         } else {
@@ -46,16 +94,41 @@ export class Interview implements OnInit {
         }
     }
 
-    showToast(message, position) {
+    private showToast(message: string, position: string) {
         this.platform.ready().then(() => {
-            window.plugins.toast.show(message, "short", position);
-        });
+                try {
+                    Toast.show(message, "short", position).subscribe(
+                        toast => {
+                            console.log(toast);
+                        }
+                    )
+                } catch (e: string) {
+                    if (e && e === 'cordova_not_available') {
+                        alert('Cordova not available. Toast message: \r\n ' + message);
+                    }
+                }
+            }
+        );
     }
 
-    ngOnInit(): void {
-        this.resourceService.getResource<Question[]>('interview')
-            .then(result => this.questions = result as Question[])
-            .then(() => this.currentQuestion = this.questions[0]);
+    private toggleCheckedStatusConsideringNoneOption(answer: Answer) {
+        this.currentQuestion.answers.filter(a => a.noneoption !== answer.noneoption).forEach(a => a.selected = false);
+    }
 
+    private addPossibleFollowups(answer: Answer) {
+        let followups = this.questionService.getFollowupQuestions(answer);
+        if (followups) {
+            followups.forEach(q => this.questions.splice(this.getCurrentIndex(), 0, q));
+        }
+    }
+
+    // TODO: Watch out for questions that were added by two answers. We need to keep track of the questions being added and remove only the
+    //       ones that are note referenced by a selected answer anymore
+    private removePossibleFollowups(answer: Answer) {
+        let followups = this.questionService.getFollowupQuestions(answer);
+        if (followups) {
+            followups.filter(q => this.questions.indexOf(q) >= 0)
+                .forEach(q => this.questions.splice(this.questions.indexOf(q), 1));
+        }
     }
 }

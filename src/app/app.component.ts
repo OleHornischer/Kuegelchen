@@ -7,12 +7,13 @@ import {Idea} from "../pages/idea/idea";
 import {TranslateService} from "ng2-translate";
 import {Remedies} from "../pages/remedies/remedies";
 import {Interview} from "../interview/interview";
+import {AnswerService} from "../services/answer.service";
+import {QuestionService} from "../services/question.service";
 
 
 @Component({
     templateUrl: 'app.html',
-    providers: [ResourceService],
-
+    providers: [ResourceService, AnswerService, QuestionService],
 })
 export class Kuegelchen {
     @ViewChild(Nav) nav: Nav;

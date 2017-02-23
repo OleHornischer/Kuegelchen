@@ -19,6 +19,11 @@
   },
   "INTERVIEW": {
     "TITLE": "Interview",
-    "QUESTION": "Question"
+    "QUESTION": "Question",
+    "TOASTNOANSWER": "Please select an answer.",
+    "RESETCONFIRM": "Should the interview be reset and all answers be discarded?"
+  },
+  "GENERAL": {
+    "WARNING": "Warning!"
   }
 }
