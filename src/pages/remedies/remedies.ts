@@ -2,7 +2,8 @@ import {Component, OnInit} from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 import {ResourceService} from "../../services/resource.service";
-import {Remedy} from "./remedy";
+import {Remedy} from "../../entities/remedy";
+import {RemedyService} from "../../services/remedy.service";
 
 @Component({
   selector: 'page-remedies',
@@ -12,7 +13,7 @@ export class Remedies implements OnInit {
   selectedRemedy: Remedy;
   remedies: Remedy[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private resourceService: ResourceService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private remedyService: RemedyService) {
     this.selectedRemedy = navParams.get('remedy');
   }
 
@@ -23,7 +24,7 @@ export class Remedies implements OnInit {
   }
 
   ngOnInit(): void {
-    this.resourceService.getResource<Remedy[]>('remedies')
+    this.remedyService.getRemedies()
         .then(result => this.remedies = result as Remedy[]);
 
   }

@@ -7,7 +7,7 @@ import {Kuegelchen} from "./app.component";
 import {Idea} from "../pages/idea/idea";
 import {Instructions} from "../pages/instructions/instructions";
 import {Remedies} from "../pages/remedies/remedies";
-import {Interview} from "../interview/interview";
+import {Interview} from "../pages/interview/interview";
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');

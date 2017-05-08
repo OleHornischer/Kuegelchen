@@ -1,14 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 
 import {NavController, NavParams, Platform} from 'ionic-angular';
-import {Question} from "../entities/question";
-import {ResourceService} from "../services/resource.service";
 
 import {Dialogs, Toast} from 'ionic-native';
 import {TranslateService} from "ng2-translate";
-import {Answer} from "../entities/answer";
-import {QuestionService} from "../services/question.service";
-import {AnswerService} from "../services/answer.service";
+import {QuestionService} from "../../services/question.service";
+import {Question} from "../../entities/question";
+import {ResourceService} from "../../services/resource.service";
+import {Answer} from "../../entities/answer";
 
 @Component({
     selector: 'page-interview',
@@ -21,7 +20,6 @@ export class Interview implements OnInit {
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                private resourceService: ResourceService,
                 private platform: Platform,
                 private translate: TranslateService,
                 private questionService: QuestionService) {
@@ -39,7 +37,8 @@ export class Interview implements OnInit {
                 this.showToast(this.translate.instant('INTERVIEW.TOASTNOANSWER'), 'bottom');
             }
         } else {
-            //calculate result
+            let sortedEvaluation: [number, number][] = this.questionService.evaluateInterview(this.questions);
+            alert(sortedEvaluation);
         }
     }
 
@@ -118,7 +117,7 @@ export class Interview implements OnInit {
     private addPossibleFollowups(answer: Answer) {
         let followups = this.questionService.getFollowupQuestions(answer);
         if (followups) {
-            followups.forEach(q => this.questions.splice(this.getCurrentIndex(), 0, q));
+            followups.forEach(q => this.questions.splice(this.getCurrentIndex()+1, 0, q));
         }
     }
 

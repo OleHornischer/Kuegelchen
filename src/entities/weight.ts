@@ -1,4 +1,4 @@
 export class Weight {
     remedy: number;
-    value: string;
+    value: number;
 }

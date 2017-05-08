@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Aconitum napellus D12",
       "altName": "Sturm- oder Eisenhut",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -10,7 +10,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Apis mellifica D12",
       "altName": "Bienengift",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -19,7 +19,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Arnica montana D30",
       "altName": "Bergwohlverleih",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -28,7 +28,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Arsenicum album D12",
       "altName": "Arsentrioxid",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -37,7 +37,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Belladonna D12",
       "altName": "Tollkirsche",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -46,7 +46,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Bryonia D12",
       "altName": "Zaunrübe",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -55,7 +55,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Carbo vegetabilis D12",
       "altName": "Holzkohle",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -64,7 +64,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Causticum D12",
       "altName": "Ätzstoff Hahnemann",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -73,7 +73,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Cepa allium D12",
       "altName": "Zwiebel",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -82,7 +82,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Chamomilla D30",
       "altName": "Feldkamille",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -91,7 +91,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "Dulcamara D12",
       "altName": "bitter süßer Nachtschatten",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -100,7 +100,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "Ferrum phosphoricum D12",
       "altName": "Eisenphosphat",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -109,7 +109,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "13",
+      "id": 13,
       "name": "Gelsemium D12",
       "altName": "wilder Jasmin",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -118,7 +118,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "14",
+      "id": 14,
       "name": "Hepar sulfuris calcareum D30",
       "altName": "Kalkschwefelleber",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -127,7 +127,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "15",
+      "id": 15,
       "name": "Hypericum D12",
       "altName": "Johanniskraut",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -136,7 +136,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "16",
+      "id": 16,
       "name": "Ledum palustre D12",
       "altName": "Sumpfporst",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -145,7 +145,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "17",
+      "id": 17,
       "name": "Lycopodium D12",
       "altName": "Bärlapp",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -154,7 +154,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "18",
+      "id": 18,
       "name": "Nux vomica D30",
       "altName": "Brechnuss",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -163,7 +163,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "19",
+      "id": 19,
       "name": "Phosphorus D30",
       "altName": "Phosphor",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -172,7 +172,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "20",
+      "id": 20,
       "name": "Pulsatilla D30",
       "altName": "Küchenschelle",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 3x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/in Flasche).",
@@ -181,7 +181,7 @@
       "dosageMulti": "2­3x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 Gläser Wasser mit jeweils einem Mittel bestücken, davon abwechselnd einen Schluck trinken – 4x Tag."
     },
     {
-      "id": "21",
+      "id": 21,
       "name": "Rhus toxicodendron D12",
       "altName": "Giftsumach",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",
@@ -190,7 +190,7 @@
       "dosageMulti": "6x pro Tag ­ Mittel abwechselnd einnehmen. Oder 2­3 kleine Gläser Wasser mit jeweils einem Mittel bestücken, über den Tag verteilt abwechselnd davon trinken."
     },
     {
-      "id": "22",
+      "id": 22,
       "name": "Veratrum album D12",
       "altName": "Weißer Germer",
       "dosageBaby": "1 Kügelchen in 2 Eßlöffel Wasser auflösen ­ davon 5x täglich 1 Tropfen verabreichen (mit Finger auf die Zunge/Flasche).",

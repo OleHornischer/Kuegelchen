@@ -9,16 +9,10 @@ import {TranslateService} from "ng2-translate";
     selector: 'page-instructions',
     templateUrl: 'instructions.html'
 })
-export class Instructions implements OnInit {
+export class Instructions {
 
     instructions: string = '';
 
-    constructor(public navCtrl: NavController, private resourceService: ResourceService) {  }
-
-    ngOnInit(): void {
-        // // TODO: Use selected language
-        // this.resourceService.getResource('instructions', 'de')
-        //     .then(result => this.instructions = result as string);
-    }
+    constructor(public navCtrl: NavController) {  }
 
 }

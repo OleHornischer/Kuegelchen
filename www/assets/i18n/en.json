@@ -25,5 +25,8 @@
   },
   "GENERAL": {
     "WARNING": "Warning!"
+  },
+  "RESULT": {
+    "RESULT": "Summary"
   }
 }
